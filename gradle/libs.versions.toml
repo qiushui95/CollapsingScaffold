@@ -22,7 +22,7 @@ kotlin = "1.9.23"
 ktlint = "1.2.1"
 
 #https://github.com/vanniktech/gradle-maven-publish-plugin
-mavenpublish = "0.28.0"
+maven = "0.28.0"
 
 #https://github.com/diffplug/spotless
 spotless = "6.25.0"
@@ -34,7 +34,7 @@ application = { id = "com.android.application", version.ref = "agp" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 library = { id = "com.android.library", version.ref = "agp" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
-
+maven = { id = "com.vanniktech.maven.publish", version.ref = "maven" }
 
 
 
@@ -66,7 +66,7 @@ gradlePlugin-android = { group = "com.android.tools.build", name = "gradle", ver
 gradlePlugin-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 #https://github.com/vanniktech/gradle-maven-publish-plugin
-gradlePlugin-mavenPublish = { group = "com.vanniktech", name = "gradle-maven-publish-plugin", version.ref = "mavenpublish" }
+gradlePlugin-maven = { group = "com.vanniktech", name = "gradle-maven-publish-plugin", version.ref = "maven" }
 
 #https://github.com/diffplug/spotless
 gradlePlugin-spotless = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }

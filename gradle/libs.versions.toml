@@ -1,6 +1,4 @@
 [versions]
-#https://github.com/google/accompanist
-accompanist = "0.34.0"
 
 #https://developer.android.com/jetpack/androidx/releases/activity
 activity = "1.8.2"
@@ -8,224 +6,32 @@ activity = "1.8.2"
 #http://Nothing
 agp = "8.3.1"
 
-#https://opendocs.alipay.com/open/074rk8?pathHash=bdfba391&ref=api
-alipay = "15.8.17"
-
-#https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
-androidutils = "1.31.1"
-
-#https://developer.android.com/jetpack/androidx/releases/annotation
-annotation = "1.7.1"
-
-#https://developer.android.com/jetpack/androidx/releases/appcompat
-appcompat = "1.6.1"
-
-#https://github.com/dokar3/sheets
-bottomsheet = "0.5.7"
-
-#https://bugly.qq.com/docs/release-notes/release-android-bugly/?v=1.0.0
-bugly = "4.1.9.3"
-
-#https://github.com/littlerobots/version-catalog-update-plugin
-catalogUpdate = "0.8.4"
-
-#https://github.com/ChuckerTeam/chucker
-chucker = "4.0.0"
-
-#https://github.com/onebone/compose-collapsing-toolbar
-collapsing = "1.0.8"
+#https://developer.android.com/jetpack/androidx/releases/core
+corektx = "1.12.0"
 
 #https://developer.android.com/jetpack/compose/bom/bom-mapping
 compose-core = "1.6.4"
-compose-material3 = "1.2.1"
 
 #https://developer.android.com/jetpack/androidx/releases/compose-compiler
 composeCompiler = "1.5.11"
 
-#https://developer.android.com/jetpack/androidx/releases/constraintlayout
-constraint-compose = "1.0.1"
-constraint-layout = "2.1.4"
-
-#https://developer.android.com/jetpack/androidx/releases/core
-corektx = "1.12.0"
-
-#https://developer.android.com/jetpack/androidx/releases/core
-coresplash = "1.0.1"
-
-#https://github.com/Kotlin/kotlinx.coroutines
-coroutines = "1.8.0"
-
-#https://github.com/Tencent/VasDolly
-dolly = "3.0.6"
-
-#https://github.com/huaweicloud/huaweicloud-sdk-java-obs
-drive-obs = "3.22.3"
-
-#https://github.com/aliyun/aliyun-oss-android-sdk/blob/master/changelog.txt
-drive-oss = "2.9.18"
-
-#https://developer.android.com/jetpack/androidx/releases/exifinterface
-exif = "1.3.7"
-
-#https://github.com/alibaba/fastjson2
-fastjson = "2.0.47"
-
-#https://github.com/ReactiveCircus/FlowBinding
-flowBinding = "1.2.0"
-
-#https://github.com/respawn-app/FlowMVI
-flowmvi = "1.1.4"
-
-#https://developer.android.com/jetpack/androidx/releases/fragment
-fragment = "1.6.2"
-
-#https://github.com/bumptech/glide
-glide = "4.16.0"
-
-#https://github.com/ben-manes/gradle-versions-plugin
-gradleVersions = "0.51.0"
-
-#https://github.com/chrisbanes/haze
-#动态高斯模糊
-haze = "0.6.2"
-
-#https://github.com/Kotlin/kotlinx.collections.immutable
-immutablecollections = "0.3.7"
-
-#https://github.com/qiushui95/AndroidInitializer
-initializer = "1.0.16"
-
-#https://github.com/JodaOrg/joda-time
-jodatime = "2.12.7"
-
-#https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-junit = "5.10.2"
-
-#https://github.com/mannodermaus/android-junit5
-junit5 = "1.10.0.0"
-
-#https://github.com/InsertKoinIO/koin
-koinAndroid = "3.5.3"
-koinCompose = "3.5.3"
-koinCore = "3.5.3"
-
 #https://github.com/JetBrains/kotlin
 kotlin = "1.9.23"
-
-#https://github.com/google/ksp
-ksp = "1.9.23-1.0.19"
 
 #https://github.com/pinterest/ktlint
 ktlint = "1.2.1"
 
-#https://github.com/skydoves/landscapist
-landscapist = "2.3.2"
-
-#https://square.github.io/leakcanary/getting_started/
-leakcanary = "2.13"
-
-#https://developer.android.com/jetpack/androidx/releases/lifecycle
-lifecycle = "2.7.0"
-
-#https://github.com/airbnb/lottie-android
-lottie = "6.4.0"
-
-#https://github.com/material-components/material-components-android
-material = "1.11.0"
-
 #https://github.com/vanniktech/gradle-maven-publish-plugin
 mavenpublish = "0.28.0"
 
-#https://github.com/Tencent/MMKV/blob/master/README_CN.md
-mmkv = "1.3.4"
-
-#https://github.com/square/moshi
-moshi = "1.15.1"
-
-#https://github.com/lingochamp/okdownload
-ok-download = "1.0.7"
-
-#https://github.com/square/okhttp
-okhttp = "4.12.0"
-
-#https://github.com/getActivity/XXPermissions
-permission = "18.62"
-
-#https://github.com/CarGuo/GSYVideoPlayer
-player-video = "v8.6.0-release-jitpack"
-
-#https://github.com/square/retrofit
-retrofit = "2.10.0"
-
-#https://github.com/MohamedRejeb/Compose-Rich-Editor
-richtext = "0.2.0"
-
-#https://developer.android.com/jetpack/androidx/releases/room
-room = "2.6.1"
-
-#https://github.com/davemorrissey/subsampling-scale-image-view
-sampling_image = "3.10.0"
-
-#https://github.com/LuckSiege/PictureSelector
-selector = "v3.11.2"
-
-#https://github.com/GIGAMOLE/ComposeShadowsPlus
-shadows = "1.0.4"
-
-#https://github.com/SmartToolFactory/Compose-Colorful-Sliders
-slider = "1.2.2"
-
 #https://github.com/diffplug/spotless
 spotless = "6.25.0"
-
-#https://github.com/facebook/stetho
-stetho = "1.6.0"
-
-#https://github.com/KevinnZou/compose-swipeBox
-swipe-box = "1.3.0"
-
-#https://github.com/saket/telephoto
-telephoto = "0.8.0"
-
-#https://github.com/wasabeef/transformers
-transformers = "1.0.6"
-
-#https://github.com/azhon/AppUpdate
-update = "4.3.2"
-
-#https://github.com/adrielcafe/voyager
-#导航框架
-voyager = "1.0.0"
-
-#https://github.com/KevinnZou/compose-webview
-webview = "0.33.4"
-
-#https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump2
-wechat = "6.8.28"
-
-#https://developer.android.com/jetpack/androidx/releases/work
-work = "2.9.0"
-
-#https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md
-xcrash = "3.1.0"
-
-#https://github.com/li-xiaojun/XPopup
-xpopup = "2.10.0"
-
-#https://github.com/panpf/zoomimage
-zoomimage = "1.0.2"
-
-
 
 
 
 [plugins]
 application = { id = "com.android.application", version.ref = "agp" }
-catalogUpdate = { id = "nl.littlerobots.version-catalog-update", version.ref = "catalogUpdate" }
-gradleVersions = { id = "com.github.ben-manes.versions", version.ref = "gradleVersions" }
-junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 library = { id = "com.android.library", version.ref = "agp" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
@@ -234,47 +40,18 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 
 [libraries]
-#https://github.com/google/accompanist
-accompanist-drawablepainter = { group = "com.google.accompanist", name = "accompanist-drawablepainter", version.ref = "accompanist" }
-accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
-accompanist-placeholder = { group = "com.google.accompanist", name = "accompanist-placeholder", version.ref = "accompanist" }
-accompanist-uicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
-accompanist-webview = { group = "com.google.accompanist", name = "accompanist-webview", version.ref = "accompanist" }
 
 #https://developer.android.com/jetpack/androidx/releases/activity
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
 activity-core = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
 
-#https://opendocs.alipay.com/open/074rk8?pathHash=bdfba391&ref=api
-alipay = { group = "com.alipay.sdk", name = "alipaysdk-android", version.ref = "alipay" }
-
-#https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
-android-utils = { group = "com.blankj", name = "utilcodex", version.ref = "androidutils" }
-
-#https://developer.android.com/jetpack/androidx/releases/annotation
-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
-
-#https://developer.android.com/jetpack/androidx/releases/appcompat
-appcompat-core = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-appcompat-resources = { group = "androidx.appcompat", name = "appcompat-resources", version.ref = "appcompat" }
-
-#https://github.com/dokar3/sheets
-bottomsheet = { group = "io.github.dokar3", name = "sheets", version.ref = "bottomsheet" }
-
-#https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=1.0.0
-bugly = { group = "com.tencent.bugly", name = "crashreport", version.ref = "bugly" }
-
-#https://github.com/ChuckerTeam/chucker
-chucker = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
-
-#https://github.com/onebone/compose-collapsing-toolbar
-collapsing = { group = "com.github.GIGAMOLE.fix", name = "ComposeCollapsingToolbar", version.ref = "collapsing" }
+#https://developer.android.com/jetpack/androidx/releases/core
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "corektx" }
 
 #https://developer.android.com/jetpack/androidx/releases/compose
 compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose-core" }
 compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "compose-core" }
 compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose-core" }
-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material3" }
 compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose-core" }
 compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "compose-core" }
 compose-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "compose-core" }
@@ -282,254 +59,14 @@ compose-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifes
 compose-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose-core" }
 compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose-core" }
 
-#https://developer.android.com/jetpack/androidx/releases/constraintlayout
-constraint-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraint-compose" }
-constraint-layout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraint-layout" }
-
-#https://developer.android.com/jetpack/androidx/releases/core
-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "corektx" }
-core-splash = { group = "androidx.core", name = "core-splashscreen", version.ref = "coresplash" }
-
-#https://github.com/Kotlin/kotlinx.coroutines
-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
-
-#https://github.com/Tencent/VasDolly
-dolly = { group = "com.tencent.vasdolly", name = "helper", version.ref = "dolly" }
-
-#https://github.com/huaweicloud/huaweicloud-sdk-java-obs
-drive-obs = { group = "com.huaweicloud", name = "esdk-obs-android", version.ref = "drive-obs" }
-
-#https://help.aliyun.com/document_detail/32043.html?spm=a2c4g.32041.0.0.5c6b3c6bC8T5kQ
-drive-oss = { group = "com.aliyun.dpa", name = "oss-android-sdk", version.ref = "drive-oss" }
-
-#https://developer.android.com/jetpack/androidx/releases/exifinterface
-exif = { group = "androidx.exifinterface", name = "exifinterface", version.ref = "exif" }
-
-#https://github.com/alibaba/fastjson2
-fastjson = { group = "com.alibaba.fastjson2", name = "fastjson2", version.ref = "fastjson" }
-
-#https://github.com/ReactiveCircus/FlowBinding
-flow-binding-activity = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-activity", version.ref = "flowBinding" }
-flow-binding-android = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-android", version.ref = "flowBinding" }
-flow-binding-appcompat = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-appcompat", version.ref = "flowBinding" }
-flow-binding-core = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-core", version.ref = "flowBinding" }
-flow-binding-drawerlayout = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-drawerlayout", version.ref = "flowBinding" }
-flow-binding-lifecycle = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-lifecycle", version.ref = "flowBinding" }
-flow-binding-material = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-material", version.ref = "flowBinding" }
-flow-binding-navigation = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-navigation", version.ref = "flowBinding" }
-flow-binding-preference = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-preference", version.ref = "flowBinding" }
-flow-binding-recyclerview = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-recyclerview", version.ref = "flowBinding" }
-flow-binding-swiperefreshlayout = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-swiperefreshlayout", version.ref = "flowBinding" }
-flow-binding-viewpager = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-viewpager", version.ref = "flowBinding" }
-flow-binding-viewpager2 = { group = "io.github.reactivecircus.flowbinding", name = "flowbinding-viewpager2", version.ref = "flowBinding" }
-
-#https://github.com/respawn-app/FlowMVI
-flowmvi-android = { module = "pro.respawn.flowmvi:android", version.ref = "flowmvi" }
-flowmvi-compose = { module = "pro.respawn.flowmvi:android-compose", version.ref = "flowmvi" }
-flowmvi-core = { module = "pro.respawn.flowmvi:core", version.ref = "flowmvi" }
-flowmvi-view = { module = "pro.respawn.flowmvi:android-view", version.ref = "flowmvi" }
-
-#https://developer.android.com/jetpack/androidx/releases/fragment
-fragment-core = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
-fragment-test = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment" }
-
-#https://github.com/bumptech/glide
-glide-core = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
-glide-ksp = { group = "com.github.bumptech.glide", name = "ksp", version.ref = "glide" }
-glide-okhttp = { group = "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "glide" }
-
 #http://Nothing
 gradlePlugin-android = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 
-#https://github.com/mannodermaus/android-junit5
-gradlePlugin-junit5 = { group = "de.mannodermaus.gradle.plugins", name = "android-junit5", version.ref = "junit5" }
-
 #https://github.com/JetBrains/kotlin
 gradlePlugin-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
-
-#https://github.com/google/ksp
-gradlePlugin-ksp = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 
 #https://github.com/vanniktech/gradle-maven-publish-plugin
 gradlePlugin-mavenPublish = { group = "com.vanniktech", name = "gradle-maven-publish-plugin", version.ref = "mavenpublish" }
 
 #https://github.com/diffplug/spotless
 gradlePlugin-spotless = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
-
-#https://github.com/chrisbanes/haze
-haze = { group = "dev.chrisbanes.haze", name = "haze-jetpack-compose", version.ref = "haze" }
-
-#https://github.com/Kotlin/kotlinx.collections.immutable
-immutable-collections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable-jvm", version.ref = "immutablecollections" }
-
-#https://github.com/qiushui95/AndroidInitializer
-initializer = { group = "com.github.qiushui95", name = "AndroidInitializer", version.ref = "initializer" }
-
-#https://github.com/JodaOrg/joda-time
-jodatime = { group = "joda-time", name = "joda-time", version.ref = "jodatime" }
-
-#https://github.com/InsertKoinIO/koin
-koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koinAndroid" }
-koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinCompose" }
-koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koinCore" }
-
-#https://github.com/JetBrains/kotlin
-kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
-kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlin" }
-
-#https://github.com/pinterest/ktlint
-ktlint = { group = "com.pinterest.ktlint", name = "ktlint-cli", version.ref = "ktlint" }
-
-#https://github.com/skydoves/landscapist
-landscapist-animation = { group = "com.github.skydoves", name = "landscapist-animation", version.ref = "landscapist" }
-landscapist-glide = { group = "com.github.skydoves", name = "landscapist-glide", version.ref = "landscapist" }
-landscapist-palette = { group = "com.github.skydoves", name = "landscapist-palette", version.ref = "landscapist" }
-landscapist-placeholder = { group = "com.github.skydoves", name = "landscapist-placeholder", version.ref = "landscapist" }
-landscapist-transformation = { group = "com.github.skydoves", name = "landscapist-transformation", version.ref = "landscapist" }
-
-#https://square.github.io/leakcanary/getting_started/
-leakcanary = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakcanary" }
-
-#https://developer.android.com/jetpack/androidx/releases/lifecycle
-lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycle" }
-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycle" }
-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
-
-#https://github.com/airbnb/lottie-android
-lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
-lottie-view = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
-
-#https://github.com/material-components/material-components-android
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-
-#https://github.com/Tencent/MMKV/blob/master/README_CN.md
-mmkv = { group = "com.tencent", name = "mmkv-static", version.ref = "mmkv" }
-
-#https://github.com/square/moshi
-moshi-core = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
-moshi-ksp = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
-
-#https://github.com/lingochamp/okdownload
-okdownload-core = { group = "com.liulishuo.okdownload", name = "okdownload", version.ref = "ok-download" }
-okdownload-ktx = { group = "com.liulishuo.okdownload", name = "ktx", version.ref = "ok-download" }
-okdownload-okhttp = { group = "com.liulishuo.okdownload", name = "okhttp", version.ref = "ok-download" }
-okdownload-sqlite = { group = "com.liulishuo.okdownload", name = "sqlite", version.ref = "ok-download" }
-
-#https://github.com/square/okhttp
-okhttp-core = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
-okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
-okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
-
-#https://github.com/getActivity/XXPermissions
-permission = { group = "com.github.getActivity", name = "XXPermissions", version.ref = "permission" }
-
-#https://github.com/CarGuo/GSYVideoPlayer
-player-video-arm64 = { group = "com.github.CarGuo.GSYVideoPlayer", name = "gsyVideoPlayer-arm64", version.ref = "player-video" }
-player-video-armv7a = { group = "com.github.CarGuo.GSYVideoPlayer", name = "gsyVideoPlayer-armv7a", version.ref = "player-video" }
-player-video-core = { group = "com.github.CarGuo.GSYVideoPlayer", name = "gsyVideoPlayer-java", version.ref = "player-video" }
-player-video-exo = { group = "com.github.CarGuo.GSYVideoPlayer", name = "GSYVideoPlayer-exo2", version.ref = "player-video" }
-
-#https://github.com/square/retrofit
-retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
-retrofit-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
-
-#https://github.com/MohamedRejeb/Compose-Rich-Editor
-richtext = { group = "com.mohamedrejeb.richeditor", name = "richeditor-compose", version.ref = "richtext" }
-
-#https://developer.android.com/jetpack/androidx/releases/room
-room-core = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
-room-ksp = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
-
-#https://github.com/davemorrissey/subsampling-scale-image-view
-sampling-image = { group = "com.davemorrissey.labs", name = "subsampling-scale-image-view", version.ref = "sampling_image" }
-
-#https://github.com/LuckSiege/PictureSelector
-selector-camerax = { group = "io.github.lucksiege", name = "camerax", version.ref = "selector" }
-selector-compress = { group = "io.github.lucksiege", name = "compress", version.ref = "selector" }
-selector-core = { group = "io.github.lucksiege", name = "pictureselector", version.ref = "selector" }
-selector-crop = { group = "io.github.lucksiege", name = "ucrop", version.ref = "selector" }
-
-#https://github.com/GIGAMOLE/ComposeShadowsPlus
-shadows = { group = "com.github.GIGAMOLE", name = "ComposeShadowsPlus", version.ref = "shadows" }
-
-#https://github.com/SmartToolFactory/Compose-Colorful-Sliders
-slider = { group = "com.github.SmartToolFactory", name = "Compose-Colorful-Sliders", version.ref = "slider" }
-
-#https://github.com/facebook/stetho
-stetho-core = { group = "com.facebook.stetho", name = "stetho", version.ref = "stetho" }
-stetho-okhttp = { group = "com.facebook.stetho", name = "stetho-okhttp3", version.ref = "stetho" }
-
-#https://github.com/KevinnZou/compose-swipeBox
-swipebox = { group = "io.github.kevinnzou", name = "compose-swipebox", version.ref = "swipe-box" }
-
-#https://github.com/saket/telephoto
-telephoto-coil = { group = "me.saket.telephoto", name = "zoomable-image-coil", version.ref = "telephoto" }
-telephoto-glide = { group = "me.saket.telephoto", name = "zoomable-image-glide", version.ref = "telephoto" }
-telephoto-sampling = { group = "me.saket.telephoto", name = "sub-sampling-image", version.ref = "telephoto" }
-telephoto-zoomable = { group = "me.saket.telephoto", name = "zoomable", version.ref = "telephoto" }
-
-#https://mvnrepository.com/artifact/androidx.test/core-ktx
-test-core = "androidx.test:core-ktx:1.5.0"
-
-#https://mvnrepository.com/artifact/androidx.test.espresso/espresso-core
-test-espresso = "androidx.test.espresso:espresso-core:3.5.1"
-
-#https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-test-junit-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
-test-junit-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
-test-junit-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junit" }
-
-#https://mvnrepository.com/artifact/androidx.test.ext/junit-ktx
-test-junit-ext = "androidx.test.ext:junit-ktx:1.1.5"
-
-#https://mvnrepository.com/artifact/androidx.test/rules
-test-rules = "androidx.test:rules:1.5.0"
-
-#https://mvnrepository.com/artifact/androidx.test/runner
-test-runner = "androidx.test:runner:1.5.2"
-
-#https://mvnrepository.com/artifact/androidx.test.uiautomator/uiautomator
-test-uiautomator = "androidx.test.uiautomator:uiautomator:2.3.0"
-
-#https://github.com/wasabeef/transformers
-transformers-core = { group = "jp.wasabeef.transformers", name = "core", version.ref = "transformers" }
-transformers-glide = { group = "jp.wasabeef.transformers", name = "glide", version.ref = "transformers" }
-transformers-gpu = { group = "jp.wasabeef.transformers", name = "glide-gpu", version.ref = "transformers" }
-
-#https://github.com/azhon/AppUpdate
-update = { group = "io.github.azhon", name = "appupdate", version.ref = "update" }
-
-#https://github.com/adrielcafe/voyager
-voyager-bottom = { group = "cafe.adriel.voyager", name = "voyager-bottom-sheet-navigator", version.ref = "voyager" }
-voyager-core = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
-voyager-koin = { group = "cafe.adriel.voyager", name = "voyager-koin", version.ref = "voyager" }
-voyager-model = { group = "cafe.adriel.voyager", name = "voyager-screenmodel", version.ref = "voyager" }
-voyager-tab = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyager" }
-voyager-transition = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyager" }
-
-#https://github.com/KevinnZou/compose-webview
-webview = { group = "io.github.kevinnzou", name = "compose-webview", version.ref = "webview" }
-
-#https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/Android.html#jump2
-wechat = { group = "com.tencent.mm.opensdk", name = "wechat-sdk-android", version.ref = "wechat" }
-
-#https://developer.android.com/jetpack/androidx/releases/work
-work-core = { group = "androidx.work", name = "work-runtime", version.ref = "work" }
-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "work" }
-work-process = { group = "androidx.work", name = "work-multiprocess", version.ref = "work" }
-
-#https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md
-xcrash = { group = "com.iqiyi.xcrash", name = "xcrash-android-lib", version.ref = "xcrash" }
-
-#https://github.com/li-xiaojun/XPopup
-xpopup = { group = "com.github.li-xiaojun", name = "XPopup", version.ref = "xpopup" }
-
-#https://github.com/panpf/zoomimage
-zoomimage = { group = "io.github.panpf.zoomimage", name = "zoomimage-compose-glide", version.ref = "zoomimage" }

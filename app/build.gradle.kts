@@ -34,6 +34,7 @@ dependencies {
     implementation(projects.core)
 
     implementation(libs.core.ktx)
-    implementation(libs.lifecycle.runtime)
+
+    implementation(libs.activity.core)
     implementation(libs.activity.compose)
 }

@@ -1,6 +1,5 @@
 package nbe.someone.code.core
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -17,7 +16,7 @@ public fun CollapsingToolbarScaffold(
     toolbar: @Composable () -> Unit,
     bodyTop: @Composable () -> Unit,
     body: @Composable () -> Unit,
-    state: CollapsingToolbarState = rememberCollapsingToolbarState()
+    state: CollapsingToolbarState = rememberCollapsingToolbarState(),
 ) {
     val connection = remember {
         fun onScrollChange(available: Offset): Offset {

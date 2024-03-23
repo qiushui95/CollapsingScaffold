@@ -1,7 +1,6 @@
 package me.ysy.collapsing.scaffold
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -48,15 +47,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CPMainPage()
-
         }
     }
 }
 
-
 @Composable
 private fun CPMainPage() {
-
     val statusBarHeightState = remember {
         mutableIntStateOf(-100)
     }
@@ -71,7 +67,7 @@ private fun CPMainPage() {
         Image(
             painter = painterResource(id = R.drawable.bg_main),
             contentDescription = "",
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
         )
 
         CollapsingToolbarScaffold(
@@ -88,7 +84,6 @@ private fun CPMainPage() {
 
 @Composable
 private fun CPStatusBar(state: CollapsingToolbarState, heightState: MutableIntState) {
-
     val percentState = remember(state.progressState) {
         derivedStateOf { (state.progressState.floatValue * 100).toInt() }.asIntState()
     }
@@ -104,23 +99,25 @@ private fun CPStatusBar(state: CollapsingToolbarState, heightState: MutableIntSt
             .fillMaxWidth()
             .height(heightDPState.value)
             .background(Color.White.copy(alpha = state.progressState.floatValue))
-            .clickable { heightState.intValue = Random.nextInt(-200, -100) }
+            .clickable { heightState.intValue = Random.nextInt(-200, -100) },
     ) {
-
         Text(
             text = "scroll:${state.scrollPxState.intValue}",
             color = Color.Black,
-            fontSize = 16.sp, modifier = Modifier.align(Alignment.CenterStart)
+            fontSize = 16.sp,
+            modifier = Modifier.align(Alignment.CenterStart),
         )
         Text(
             text = "height:${heightState.intValue * -1}",
             color = Color.Black,
-            fontSize = 16.sp, modifier = Modifier.align(Alignment.Center)
+            fontSize = 16.sp,
+            modifier = Modifier.align(Alignment.Center),
         )
         Text(
             text = "percent:${percentState.intValue}%",
             color = Color.Black,
-            fontSize = 16.sp, modifier = Modifier.align(Alignment.CenterEnd)
+            fontSize = 16.sp,
+            modifier = Modifier.align(Alignment.CenterEnd),
         )
     }
 }
@@ -131,7 +128,7 @@ private fun CPToolBar() {
         Brush.verticalGradient(
             0f to Color.White.copy(0f),
             0.7f to Color.White.copy(0.5f),
-            1f to Color.White
+            1f to Color.White,
         )
     }
 
@@ -139,7 +136,7 @@ private fun CPToolBar() {
         modifier = Modifier
             .background(brush)
             .fillMaxWidth()
-            .height(200.dp)
+            .height(200.dp),
     )
 }
 
@@ -149,7 +146,7 @@ private fun CPBodyTop() {
         modifier = Modifier
             .background(Color.Cyan)
             .fillMaxWidth()
-            .height(50.dp)
+            .height(50.dp),
     )
 }
 
@@ -205,9 +202,11 @@ private fun CPBody() {
         }
     })
 
-    Box(modifier = Modifier
-        .fillMaxSize()
-        .pullRefresh(state)) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .pullRefresh(state),
+    ) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(colorListState.size) { index ->
                 CPColorItem(colorListState[index])
@@ -220,11 +219,10 @@ private fun CPBody() {
 
 @Composable
 private fun CPColorItem(color: Color) {
-
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .height(50.dp)
-            .background(color)
+            .background(color),
     )
 }

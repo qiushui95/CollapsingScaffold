@@ -31,12 +31,9 @@ android {
 
 dependencies {
 
+    implementation(projects.core)
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime)
     implementation(libs.activity.compose)
-
-    implementation(libs.compose.foundation)
-    implementation(libs.compose.preview)
-    implementation(libs.compose.tooling)
-    implementation(libs.compose.material)
 }

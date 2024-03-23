@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CollapsingScaffold"
 include(":app")
- 
+include(":core")

@@ -20,8 +20,6 @@ import nbe.someone.code.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.extra
-import java.io.File
 
 @Suppress("unused")
 class AndroidApplicationConventionPlugin : Plugin<Project> {

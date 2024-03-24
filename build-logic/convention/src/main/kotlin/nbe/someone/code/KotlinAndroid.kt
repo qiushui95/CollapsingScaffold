@@ -18,16 +18,14 @@ package nbe.someone.code
 
 import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.JavaVersion
-import org.gradle.api.Project
 import org.gradle.api.plugins.ExtensionAware
-import org.gradle.kotlin.dsl.dependencies
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
 /**
  * Configure base Kotlin with Android options
  */
-internal fun Project.configureKotlinAndroid(
-    commonExtension: CommonExtension<*,*, *, *, *,*>,
+internal fun configureKotlinAndroid(
+    commonExtension: CommonExtension<*, *, *, *, *, *>,
     javaVersion: JavaVersion = JavaVersion.VERSION_17,
 ) {
 
@@ -36,7 +34,7 @@ internal fun Project.configureKotlinAndroid(
 
 
         defaultConfig {
-            minSdk = 28
+            minSdk = 21
         }
 
         compileOptions {

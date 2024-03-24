@@ -44,13 +44,6 @@ internal fun Project.configureAndroidCompose(
         kotlinOptions {
             freeCompilerArgs = freeCompilerArgs + buildComposeMetricsParameters()
         }
-
-        dependencies {
-            add("implementation", libs.findLibrary("compose-foundation").get())
-            add("implementation", libs.findLibrary("compose-material").get())
-            add("implementation", libs.findLibrary("compose-preview").get())
-            add("debugImplementation", libs.findLibrary("compose-tooling").get())
-        }
     }
 
     task("copyAndDealComposeMetrics") {

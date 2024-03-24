@@ -37,4 +37,8 @@ dependencies {
 
     implementation(libs.activity.core)
     implementation(libs.activity.compose)
+
+    implementation(libs.compose.foundation)
+    implementation(libs.compose.material)
+    implementation(libs.compose.preview)
 }

@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun CPMainPage() {
     val statusBarHeightState = remember {
-        mutableIntStateOf(-100)
+        mutableIntStateOf(100)
     }
 
     val state = rememberCollapsingToolbarState(statusBarHeightState)
@@ -91,7 +91,7 @@ private fun CPStatusBar(state: CollapsingToolbarState, heightState: MutableIntSt
     val density = LocalDensity.current
 
     val heightDPState = remember(key1 = density, key2 = heightState) {
-        derivedStateOf { density.run { (heightState.intValue * -1).toDp() } }
+        derivedStateOf { density.run { heightState.intValue.toDp() } }
     }
 
     Box(
@@ -99,7 +99,7 @@ private fun CPStatusBar(state: CollapsingToolbarState, heightState: MutableIntSt
             .fillMaxWidth()
             .height(heightDPState.value)
             .background(Color.White.copy(alpha = state.progressState.floatValue))
-            .clickable { heightState.intValue = Random.nextInt(-200, -100) },
+            .clickable { heightState.intValue = Random.nextInt(100, 200) },
     ) {
         Text(
             text = "scroll:${state.scrollPxState.intValue}",
@@ -108,7 +108,7 @@ private fun CPStatusBar(state: CollapsingToolbarState, heightState: MutableIntSt
             modifier = Modifier.align(Alignment.CenterStart),
         )
         Text(
-            text = "height:${heightState.intValue * -1}",
+            text = "height:${heightState.intValue}",
             color = Color.Black,
             fontSize = 16.sp,
             modifier = Modifier.align(Alignment.Center),

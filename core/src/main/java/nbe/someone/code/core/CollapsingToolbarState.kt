@@ -9,7 +9,7 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 
 public class CollapsingToolbarState internal constructor(
-    private val scrollEndDeltaPxState: IntState,
+    internal val scrollEndDeltaPxState: IntState,
 ) {
     internal val offsetYState = mutableFloatStateOf(0f)
 

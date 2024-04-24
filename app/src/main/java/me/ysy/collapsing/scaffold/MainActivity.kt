@@ -209,7 +209,7 @@ private fun CPBody() {
     ) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(colorListState.size) { index ->
-                CPColorItem(colorListState[index])
+                CPColorItem(colorListState[index], index)
             }
         }
 
@@ -218,11 +218,18 @@ private fun CPBody() {
 }
 
 @Composable
-private fun CPColorItem(color: Color) {
+private fun CPColorItem(color: Color, index: Int) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .height(50.dp)
             .background(color),
-    )
+        contentAlignment = Alignment.BottomCenter,
+    ) {
+        Text(
+            text = "index:$index",
+            color = Color.Black,
+            fontSize = 16.sp,
+        )
+    }
 }

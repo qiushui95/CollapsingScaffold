@@ -59,7 +59,9 @@ public fun CollapsingToolbarScaffold(
 
         val bodyTopMaxHeight = bodyTopPlaceableList.maxOfOrNull { it.height } ?: 0
 
-        val bodyMaxHeight = constraints.maxHeight - bodyTopMaxHeight
+        val deltaBodyHeight = state.scrollEndDeltaPxState.intValue.coerceAtLeast(0)
+
+        val bodyMaxHeight = constraints.maxHeight - bodyTopMaxHeight - deltaBodyHeight
 
         val remainHeight = (constraints.maxHeight - toolbarMaxHeight - bodyTopMaxHeight)
             .takeIf { it > 0 }

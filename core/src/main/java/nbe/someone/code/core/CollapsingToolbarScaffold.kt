@@ -1,5 +1,6 @@
 package nbe.someone.code.core
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -13,27 +14,29 @@ import androidx.compose.ui.layout.SubcomposeLayout
 @Composable
 public fun CollapsingToolbarScaffold(
     modifier: Modifier,
+    strategy: CollapsingToolbarStrategy,
     toolbar: @Composable () -> Unit,
     bodyTop: @Composable () -> Unit,
     body: @Composable () -> Unit,
     state: CollapsingToolbarState = rememberCollapsingToolbarState(),
 ) {
-    val connection = remember {
-        fun onScrollChange(available: Offset): Offset {
-            val oldOffsetY = state.toolbarYState.floatValue
-            state.offsetYState.floatValue = state.toolbarYState.floatValue + available.y
-
-            val consumedY = state.toolbarYState.floatValue - oldOffsetY
-
-            return Offset(x = 0f, y = consumedY)
-        }
-
+    val connection = remember(strategy) {
         object : NestedScrollConnection {
             override fun onPreScroll(available: Offset, source: NestedScrollSource): Offset {
-                return onScrollChange(available)
+                return strategy.onPreScroll(state, available, source)
+            }
+
+            override fun onPostScroll(
+                consumed: Offset,
+                available: Offset,
+                source: NestedScrollSource,
+            ): Offset {
+                return strategy.onPostScroll(state, consumed, available, source)
             }
         }
     }
+
+    Log.e("------", System.identityHashCode(connection).toString())
 
     SubcomposeLayout(
         modifier = modifier

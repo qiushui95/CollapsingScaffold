@@ -6,12 +6,16 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.Checkbox
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Text
 import androidx.compose.material.pullrefresh.PullRefreshIndicator
@@ -20,6 +24,7 @@ import androidx.compose.material.pullrefresh.rememberPullRefreshState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableIntState
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.asIntState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.mutableIntStateOf
@@ -39,6 +44,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import nbe.someone.code.core.CollapsingToolbarScaffold
 import nbe.someone.code.core.CollapsingToolbarState
+import nbe.someone.code.core.CollapsingToolbarStrategy
 import nbe.someone.code.core.rememberCollapsingToolbarState
 import kotlin.random.Random
 
@@ -56,6 +62,9 @@ private fun CPMainPage() {
     val statusBarHeightState = remember {
         mutableIntStateOf(100)
     }
+    val strategyState = remember {
+        mutableStateOf<CollapsingToolbarStrategy>(CollapsingToolbarStrategy.EnterAlways)
+    }
 
     val state = rememberCollapsingToolbarState(statusBarHeightState)
 
@@ -72,9 +81,10 @@ private fun CPMainPage() {
 
         CollapsingToolbarScaffold(
             modifier = Modifier.fillMaxSize(),
+            strategy = strategyState.value,
             toolbar = { CPToolBar() },
-            bodyTop = { CPBodyTop() },
-            body = { CPBody() },
+            bodyTop = { CPBodyTop(strategyState) },
+            body = { CPBody(strategyState) },
             state = state,
         )
 
@@ -141,13 +151,41 @@ private fun CPToolBar() {
 }
 
 @Composable
-private fun CPBodyTop() {
-    Spacer(
+private fun CPStrategyItem(text: String, isChecked: Boolean, onClick: () -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+        modifier = Modifier.clickable(onClick = onClick),
+    ) {
+        Checkbox(checked = isChecked, onCheckedChange = { onClick() })
+
+        Text(text = text)
+    }
+}
+
+@Composable
+private fun CPBodyTop(strategyState: MutableState<CollapsingToolbarStrategy>) {
+    Row(
         modifier = Modifier
             .background(Color.Cyan)
             .fillMaxWidth()
             .height(50.dp),
-    )
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        CPStrategyItem(
+            text = "EnterAlways",
+            isChecked = strategyState.value is CollapsingToolbarStrategy.EnterAlways,
+            onClick = { strategyState.value = CollapsingToolbarStrategy.EnterAlways },
+        )
+        Spacer(modifier = Modifier.width(16.dp))
+
+        CPStrategyItem(
+            text = "ExitUntilCollapsed",
+            isChecked = strategyState.value is CollapsingToolbarStrategy.ExitUntilCollapsed,
+            onClick = { strategyState.value = CollapsingToolbarStrategy.ExitUntilCollapsed },
+        )
+    }
 }
 
 private fun randomColorList(): List<Color> {
@@ -177,7 +215,11 @@ private fun randomColorList(): List<Color> {
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-private fun CPBody() {
+private fun CPBody(strategyState: MutableState<CollapsingToolbarStrategy>) {
+    val enableRefreshState = remember(strategyState) {
+        derivedStateOf { strategyState.value is CollapsingToolbarStrategy.EnterAlways }
+    }
+
     val colorListState = remember {
         mutableStateListOf<Color>()
     }
@@ -205,7 +247,7 @@ private fun CPBody() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .pullRefresh(state),
+            .pullRefresh(state = state, enabled = enableRefreshState.value),
     ) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(colorListState.size) { index ->

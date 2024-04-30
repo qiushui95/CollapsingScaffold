@@ -1,6 +1,5 @@
 package nbe.someone.code.core
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -35,8 +34,6 @@ public fun CollapsingToolbarScaffold(
             }
         }
     }
-
-    Log.e("------", System.identityHashCode(connection).toString())
 
     SubcomposeLayout(
         modifier = modifier

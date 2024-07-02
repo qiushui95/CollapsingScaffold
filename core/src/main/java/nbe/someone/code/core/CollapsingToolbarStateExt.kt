@@ -8,6 +8,6 @@ import androidx.compose.runtime.remember
 @Composable
 public fun rememberCollapsingToolbarState(
     maxScrollDistancePxDeltaState: IntState = mutableIntStateOf(0),
-): CollapsingToolbarState = remember(maxScrollDistancePxDeltaState) {
+): CollapsingToolbarState = remember<CollapsingToolbarState>(maxScrollDistancePxDeltaState) {
     CollapsingToolbarState(maxScrollDistancePxDeltaState)
 }

@@ -4,7 +4,6 @@ import com.diffplug.gradle.spotless.SpotlessExtension
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.kotlin.dsl.getByType
-import java.io.File
 
 internal fun Project.configSpotless() {
     pluginManager.apply("com.diffplug.spotless")

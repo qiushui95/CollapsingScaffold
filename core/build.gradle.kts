@@ -1,6 +1,6 @@
 plugins {
     id("someone.code.library")
-    id("someone.code.library.compose")
+    id("someone.code.compose")
     alias(libs.plugins.maven)
 }
 

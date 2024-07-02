@@ -19,7 +19,7 @@ public fun CollapsingToolbarScaffold(
     body: @Composable () -> Unit,
     state: CollapsingToolbarState = rememberCollapsingToolbarState(),
 ) {
-    val connection = remember(strategy) {
+    val connection = remember<NestedScrollConnection>(strategy) {
         object : NestedScrollConnection {
             override fun onPreScroll(available: Offset, source: NestedScrollSource): Offset {
                 return strategy.onPreScroll(state, available, source)

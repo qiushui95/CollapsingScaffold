@@ -16,18 +16,20 @@
 
 import com.android.build.gradle.LibraryExtension
 import nbe.someone.code.configSpotless
+import nbe.someone.code.configureKotlin
 import nbe.someone.code.configureKotlinAndroid
 import nbe.someone.code.kotlinOptions
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.dependencies
-import org.gradle.kotlin.dsl.kotlin
+import org.gradle.kotlin.dsl.getByType
 
 @Suppress("unused")
 class AndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
+
             with(pluginManager) {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
@@ -37,19 +39,17 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 configureKotlinAndroid(this)
                 defaultConfig.consumerProguardFiles("consumer-rules.pro")
                 defaultConfig.targetSdk = 34
-                defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
                 kotlinOptions {
-                    freeCompilerArgs = freeCompilerArgs + listOf("-Xexplicit-api=strict")
+                    compilerOptions {
+                        freeCompilerArgs.add("-Xexplicit-api=strict")
+                    }
                 }
             }
 
-            dependencies {
-                add("androidTestImplementation", kotlin("test"))
-                add("testImplementation", kotlin("test"))
-            }
-
             configSpotless()
+
+            configureKotlin()
         }
     }
 }

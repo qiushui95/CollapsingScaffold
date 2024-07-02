@@ -26,23 +26,28 @@ import java.io.File
 /**
  * Configure Compose-specific options
  */
-internal fun Project.configureAndroidCompose(
-    commonExtension: CommonExtension<*, *, *, *, *, *>,
-) {
+internal fun Project.configureAndroidCompose(commonExtension: CommonExtension<*, *, *, *, *, *>) {
     val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
+
+    pluginManager.apply(libs.findPlugin("compose").get().get().pluginId)
 
     commonExtension.apply {
         buildFeatures {
             compose = true
         }
 
-        composeOptions {
-            val compilerKey = "composeCompiler"
-            kotlinCompilerExtensionVersion = libs.findVersion(compilerKey).get().toString()
+        kotlinOptions {
+            compilerOptions {
+                freeCompilerArgs.addAll(buildComposeMetricsParameters())
+            }
         }
 
-        kotlinOptions {
-            freeCompilerArgs = freeCompilerArgs + buildComposeMetricsParameters()
+        dependencies {
+            add("implementation", libs.findLibrary("compose-foundation").get())
+            add("implementation", libs.findLibrary("compose-material").get())
+            add("implementation", libs.findLibrary("compose-preview").get())
+            add("debugImplementation", libs.findLibrary("compose-tooling").get())
+            add("debugImplementation", libs.findLibrary("compose-test-manifest").get())
         }
     }
 
@@ -96,7 +101,6 @@ internal fun Project.configureAndroidCompose(
             }
         }
     }
-
 }
 
 private fun Project.buildComposeMetricsParameters(): List<String> {

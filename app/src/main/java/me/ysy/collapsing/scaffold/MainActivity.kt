@@ -42,10 +42,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import nbe.someone.code.core.CollapsingToolbarScaffold
-import nbe.someone.code.core.CollapsingToolbarState
-import nbe.someone.code.core.CollapsingToolbarStrategy
-import nbe.someone.code.core.rememberCollapsingToolbarState
+import nbe.someone.code.collapsing.toolbar.CollapsingToolbarScaffold
+import nbe.someone.code.collapsing.toolbar.CollapsingToolbarState
+import nbe.someone.code.collapsing.toolbar.CollapsingToolbarStrategy
+import nbe.someone.code.collapsing.toolbar.rememberCollapsingToolbarState
 import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {

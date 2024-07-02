@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "nbe.someone.code.core"
+    namespace = "nbe.someone.code.collapsing.toolbar"
 }
 
 dependencies {

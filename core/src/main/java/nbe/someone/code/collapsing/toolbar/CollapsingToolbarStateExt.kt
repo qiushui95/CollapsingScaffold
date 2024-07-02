@@ -1,4 +1,4 @@
-package nbe.someone.code.core
+package nbe.someone.code.collapsing.toolbar
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.IntState
